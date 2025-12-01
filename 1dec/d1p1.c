@@ -41,12 +41,6 @@ int main(void) {
 		// Get direction of dial turn
 		char c = line[0];
 
-		if (c == r) {
-			change = 1;
-		} else if (c == l) {
-			change = -1;
-		}
-
 		// Parse the integer from the rest of the string
 		// Get number of turns for dial from integer
 		int value = atoi(&line[1]);
