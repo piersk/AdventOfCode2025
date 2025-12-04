@@ -6,20 +6,14 @@ int maxJolt(char *battery) {
 	int maxNum = 0;
 	int firstNum = 0;
 	int secondNum = 0;
-	int numDigits = 0;
-	int nums = 0;
 	char digit;
-	//char maxJolt[2];
 	int maxJolt;
 	int currJolt;
 	int idx = 0;
 	size_t len = strlen(battery);
 	for (size_t i = 0; i < len; i++) {
 		digit = battery[i];
-		//currJolt = stroi(battery[i]);
 		currJolt = atoi(&digit);
-		//currJolt = atoi(&battery[i]);
-		//currJolt = strtoi(battery[i], NULL);
 		if (currJolt > firstNum && i != (len - 1)) {
 			firstNum = currJolt;
 			idx = i;
